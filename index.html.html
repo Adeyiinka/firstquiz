@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My First Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+    <div class="cardcontainer">
+        <div class="question-number"> 
+            <h3>Please provide answer to question <span class="question-num-value"></span> of <span class="total-question"></span></h3>
+        </div>
+        <div class="question"> 
+        
+        </div>
+
+            <div class="options">
+                <div id="0" class="option1" onclick="check(this)"></div>
+                <div id="1" class="option2" onclick="check(this)"> </div>
+                <div id="2" class="option3" onclick="check(this)"> </div>
+                <div id="3" class="option4" onclick="check(this)"> </div>
+            </div>
+
+            <div class="button">
+                <button type="button" class="btn" onclick="next()">Next Question</button>
+            </div>
+        </div>
+    <div class="quiz-over">
+        <div class="box">
+         <h1>
+             You don try my guy<br> 
+            Na <span class="correct-answers"> 3 </span> out of <span class="total-question2">10 </span>  you score
+        </h1>
+        <button type="button" onclick="tryagain()"> Do Am Again </button>
+    </div>
+    </div>
+</body>
+</html>
